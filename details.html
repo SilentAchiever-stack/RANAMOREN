@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          body{
+            background-color: rgba(246, 153, 14, 0.557);
+            font-size: 16px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            text-align: center;
+          } 
+          div h2{
+            color:rgb(139, 115, 85);
+            } 
+            h2::first-line{
+                font-style:italic ;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>User Details</h2>
+            <label for="username">username:</label>
+            <input type="text" id="username" autocomplete="name" name="username"><br><br>
+            <label for="age">age:</label>
+            <input type="number" id="age" autocomplete="off" name="age"><br><br>
+            <!--<label for="showcountry">country:</label>-->
+                <label for="country">country:</label>
+        <input type="text" id="country" autocomplete="country"><br><br>
+        <button id="mysubmit">submit</button>
+        </div>
+        </body>
+        <script>
+            let username;
+          document.getElementById("mysubmit").onclick = function(){
+                username = document.getElementById("username").value;
+                console.log(username);
+            }  
+             let age;
+    document.getElementById("mysubmit").onclick = function(){
+        age = document.getElementById("age").value;
+        console.log(age);
+    }
+    let country;
+        document.getElementById("mysubmit").onclick = function () {
+            country = document.getElementById('country').value;
+            console.log(country);
+        }
+         </script>
+         </html>
