@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Application</title>
+        <link rel="stylesheet" href="JobApplication.css">
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <label for="name">Name:
+                    <input type="text" id="name">
+                </label><br><br>
+                <label for="email">Email:
+                    <input type="email" id="email">
+                </label><br><br>
+               <label for="position"> Job Position</label>
+                <select id="position">
+                    <option value="developer">frontend</option>
+                    <option value="developer"selected>backend</option>
+                    <option value="developer">fullstack</option>
+                </select><br><br>
+                <fieldset class="radio-group">
+                    <legend>Job Position Availability</legend>
+                    <input type="radio" class="radio" name= "availability">
+                    <label>full-time</label><br>
+                    <input type="radio" name="availability">
+                    <label>part-time</label>
+                </fieldset><br>
+<!--                 <label for="message">Message</label> -->
+                <textarea id="message" placeholder="write your message..."></textarea><br>
+<button  class="button"  type="submit">submit</button>
+<button class="button" type="reset">reset</button>
+
+            </form>
+        </div>
+    </body>
+</html>
