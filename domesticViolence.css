@@ -389,8 +389,9 @@ iframe {
     main,
     section {
         max-width:93%;
+        line-height:1.6;
         padding: 10px;
-        margin: 8px 0;
+        margin: auto;
     }
     
     iframe {
@@ -405,4 +406,5 @@ iframe {
         font-size: 0.8em;
     }
 }
+
 
