@@ -505,3 +505,22 @@ iframe {
         height: 150px;
     }
 }
+/* footer for all Disclaimer */
+
+#footerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    gap: 10px;
+    background-color: tomato;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+@media(max-width: 768px) {
+    #footerContainer {
+        flex-direction: column;
+    }
+}

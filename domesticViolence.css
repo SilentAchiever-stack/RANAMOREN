@@ -388,10 +388,8 @@ iframe {
     
     main,
     section {
-        max-width:93%;
-        line-height:1.6;
         padding: 10px;
-        margin: auto;
+        margin: 8px 0;
     }
     
     iframe {
@@ -406,5 +404,22 @@ iframe {
         font-size: 0.8em;
     }
 }
+/* footer for all Disclaimer */
 
+#footerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    gap: 10px;
+    background-color: tomato;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
 
+@media(max-width: 768px) {
+    #footerContainer {
+        flex-direction: column;
+    }
+}
