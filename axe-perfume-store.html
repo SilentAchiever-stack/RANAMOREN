@@ -14,14 +14,14 @@
     <header class="header">
         <nav class="navbar">
             <div class="nav-container">
-                <div class="logo">
-                    <i class="fas fa-spray-can"></i>
+                 <div class="logo">
+                    <!--<i class="fas fa-spray-can"></i> -->
                     <span>AXE Collection</span>
                 </div>
                 <ul class="nav-menu">
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#products" class="nav-link">Products</a></li>
-                    <li><a href="#collections" class="nav-link">Collections</a></li>
+                    <!-- <li><a href="#collections" class="nav-link">Collections</a></li> -->
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
@@ -62,19 +62,23 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-background">
+        <video autoplay muted loop playsinline id="Axe">
+            <source src="AXE.mp4" type="video/mp4">
+        </video>
+        <img src="https://i.pinimg.com/1200x/03/40/8f/03408fe887b2f65c2227903e94d23be6.jpg" alt="" class="mod">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
-            <h1>Discover Your Signature Scent</h1>
+            <!-- <h1>Discover Your Signature Scent</h1>
             <p>Premium fragrances that define your style and elevate your presence</p>
-            <div class="hero-buttons">
+            <div class="hero-buttons"> -->
                 <button class="btn btn-primary" onclick="scrollToSection('products')">
                     <i class="fas fa-shopping-bag"></i>
                     Shop Now
                 </button>
-                <button class="btn btn-secondary" onclick="scrollToSection('collections')">
+                <button class="btn btn-secondary" onclick="scrollToSection('contact')">
                     <i class="fas fa-eye"></i>
-                    View Collections
+                    Get in Touch
                 </button>
             </div>
         </div>
@@ -110,7 +114,7 @@
                 <!-- AXE Dark Temptation -->
                 <div class="product-card" data-category="men" data-id="1">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=500&fit=crop"
+                        <img src="https://i.pinimg.com/736x/4d/81/56/4d815699c8b66b8ab72912a30ca7902d.jpg"
                             alt="AXE Dark Temptation">
                         <div class="product-overlay">
                             <button class="quick-view-btn" onclick="quickView(1)">
@@ -147,7 +151,7 @@
                 <!-- AXE Phoenix -->
                 <div class="product-card" data-category="men" data-id="2">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=400&h=500&fit=crop"
+                        <img src="https://i.pinimg.com/1200x/d2/90/dd/d290dd707a9065d557c8147dd5134915.jpg"
                             alt="AXE Phoenix">
                         <div class="product-overlay">
                             <button class="quick-view-btn" onclick="quickView(2)">
@@ -182,7 +186,7 @@
                 <!-- AXE Black -->
                 <div class="product-card" data-category="men" data-id="3">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1588405748880-12d1d2a59d32?w=400&h=500&fit=crop"
+                        <img src="https://i.pinimg.com/736x/de/a0/8c/dea08c6063120f483f63dd00715e167e.jpg"
                             alt="AXE Black">
                         <div class="product-overlay">
                             <button class="quick-view-btn" onclick="quickView(3)">
@@ -218,7 +222,7 @@
                 <!-- AXE Anarchy For Her -->
                 <div class="product-card" data-category="women" data-id="4">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=400&h=500&fit=crop"
+                        <img src="https://i.pinimg.com/1200x/ad/2b/75/ad2b752c19b1235773d2b893f67a0de8.jpg"
                             alt="AXE Anarchy For Her">
                         <div class="product-overlay">
                             <button class="quick-view-btn" onclick="quickView(4)">
@@ -254,7 +258,7 @@
                 <!-- AXE Apollo -->
                 <div class="product-card" data-category="men" data-id="5">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=400&h=500&fit=crop"
+                        <img src="https://i.pinimg.com/736x/50/c2/b8/50c2b878434ff511079f3a96e0061d1d.jpg"
                             alt="AXE Apollo">
                         <div class="product-overlay">
                             <button class="quick-view-btn" onclick="quickView(5)">
@@ -289,8 +293,8 @@
                 <!-- AXE Unity -->
                 <div class="product-card" data-category="unisex" data-id="6">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?w=400&h=500&fit=crop"
-                            alt="AXE Unity">
+                        <img src="https://i.pinimg.com/1200x/f8/00/89/f80089479848880682b64c42cc1aa8d2.jpg"
+                            alt="AXE Excite">
                         <div class="product-overlay">
                             <button class="quick-view-btn" onclick="quickView(6)">
                                 <i class="fas fa-eye"></i>
@@ -302,7 +306,7 @@
                         <div class="product-badge limited">Limited</div>
                     </div>
                     <div class="product-info">
-                        <h3>AXE Unity</h3>
+                        <h3>AXE Excite</h3>
                         <p class="product-category">Unisex Fragrance</p>
                         <div class="product-rating">
                             <i class="fas fa-star"></i>
@@ -325,7 +329,7 @@
         </div>
     </section>
 
-    <!-- Collections Section -->
+    <!-- Collections Section 
     <section id="collections" class="collections">
         <div class="container">
             <h2 class="section-title">Our Collections</h2>
@@ -373,7 +377,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- About Section -->
     <section id="about" class="about">
@@ -467,7 +471,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="logo">
-                        <i class="fas fa-spray-can"></i>
+                      <!--   <i class="fas fa-spray-can"></i> -->
                         <span>AXE Collection</span>
                     </div>
                     <p>Discover your signature scent with our premium collection of fragrances designed to elevate your

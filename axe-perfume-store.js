@@ -10,7 +10,7 @@ class AxePerfumeStore {
                 category: 'men',
                 price: 45.99,
                 originalPrice: 59.99,
-                image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=500&fit=crop',
+                image: 'https://i.pinimg.com/736x/4d/81/56/4d815699c8b66b8ab72912a30ca7902d.jpg',
                 rating: 4.8,
                 description: 'A seductive fragrance with notes of dark chocolate and amber. Perfect for evening wear and special occasions.',
                 badge: 'Best Seller'
@@ -21,7 +21,7 @@ class AxePerfumeStore {
                 category: 'men',
                 price: 42.99,
                 originalPrice: null,
-                image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?w=400&h=500&fit=crop',
+                image: 'https://i.pinimg.com/1200x/d2/90/dd/d290dd707a9065d557c8147dd5134915.jpg',
                 rating: 4.6,
                 description: 'Fresh and energizing fragrance with citrus and woody notes. Ideal for daily wear and active lifestyles.',
                 badge: null
@@ -32,7 +32,7 @@ class AxePerfumeStore {
                 category: 'men',
                 price: 48.99,
                 originalPrice: null,
-                image: 'https://images.unsplash.com/photo-1588405748880-12d1d2a59d32?w=400&h=500&fit=crop',
+                image: 'https://i.pinimg.com/736x/de/a0/8c/dea08c6063120f483f63dd00715e167e.jpg',
                 rating: 4.9,
                 description: 'Sophisticated and mysterious fragrance with deep, rich notes. A modern classic for the confident man.',
                 badge: 'New'
@@ -43,7 +43,7 @@ class AxePerfumeStore {
                 category: 'women',
                 price: 52.99,
                 originalPrice: 65.99,
-                image: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=400&h=500&fit=crop',
+                image: 'https://i.pinimg.com/1200x/ad/2b/75/ad2b752c19b1235773d2b893f67a0de8.jpg',
                 rating: 4.7,
                 description: 'Bold and rebellious fragrance for women who dare to be different. Features floral and fruity notes.',
                 badge: null
@@ -54,21 +54,22 @@ class AxePerfumeStore {
                 category: 'men',
                 price: 44.99,
                 originalPrice: null,
-                image: 'https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=400&h=500&fit=crop',
+                image: 'https://i.pinimg.com/736x/50/c2/b8/50c2b878434ff511079f3a96e0061d1d.jpg',
                 rating: 4.8,
                 description: 'Fresh and clean fragrance inspired by space exploration. Light and refreshing for everyday use.',
                 badge: null
             },
             6: {
                 id: 6,
-                name: 'AXE Unity',
+                name: 'AXE Excite',
                 category: 'unisex',
                 price: 55.99,
                 originalPrice: null,
-                image: 'https://images.unsplash.com/photo-1563170351-be82bc888aa4?w=400&h=500&fit=crop',
+                image: 'https://i.pinimg.com/1200x/f8/00/89/f80089479848880682b64c42cc1aa8d2.jpg',
                 rating: 4.9,
                 description: 'A unisex fragrance celebrating diversity and inclusion. Balanced notes suitable for everyone.',
                 badge: 'Limited'
+                
             }
         };
 
