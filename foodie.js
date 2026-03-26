@@ -118,16 +118,15 @@ class AgroTechMarketplace {
     }
 
     setupEventListeners() {
-        // Mobile menu toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
+      /*  // Mobile menu toggle
+        const ham = document.querySelector('.ham');
+        const nav = document.querySelector('.nav-link');
 
-        if (hamburger && navMenu) {
+        if (ham && nav) {
             hamburger.addEventListener('click', () => {
-                navMenu.classList.toggle('active');
+                navMenu.classList.toggle('show');
             });
-        }
-
+        } */
         // Cart sidebar
         const cartBtn = document.getElementById('cartBtn');
         const cartSidebar = document.getElementById('cartSidebar');
@@ -164,7 +163,11 @@ class AgroTechMarketplace {
         }
     }
 
-    setupNavigation() {
+     setupNavigation() {
+       /*  const  link = document.getElementById("nav-link");
+    const ham = document.getElementById("ham");
+   ham.addEventListener('click', ()=>link.classList.toggle("show")); */
+
         // Smooth scrolling for navigation links
         const navLinks = document.querySelectorAll('.nav-link');
         navLinks.forEach(link => {
@@ -181,8 +184,8 @@ class AgroTechMarketplace {
             });
         });
     }
-
-    setupFilters() {
+ 
+     setupFilters() {
         const filterBtns = document.querySelectorAll('.filter-btn');
         filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
@@ -195,7 +198,7 @@ class AgroTechMarketplace {
                 this.filterProducts(filter);
             });
         });
-    }
+    } 
 
     scrollToSection(sectionId) {
         const section = document.getElementById(sectionId);
@@ -458,10 +461,10 @@ function exploreCategory(category) {
 }
 
 // Initialize the marketplace when DOM is loaded
-let agroMarketplace;
+ let agroMarketplace;
 
 document.addEventListener('DOMContentLoaded', () => {
-    agroMarketplace = new AgroTechMarketplace();
+    agroMarketplace = new AgroTechMarketplace(); 
 
     // Add scroll effect to header
     window.addEventListener('scroll', () => {
@@ -629,3 +632,35 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+
+ const  links = document.getElementById("nav-link");
+    const ham = document.getElementById("ham");
+    const link = document.querySelector('.menu a');
+   ham.addEventListener('click', () =>{ 
+    links.classList.toggle("show");
+    ham.classList.add('hide');
+});
+
+link.forEach(link =>{
+link.addEventListener('click',()=>{
+    links.classList.remove('show');
+    ham.classList.remove('hide');
+});
+});
+/* const ham = document.querySelector('.ham');
+const links = document.querySelector('.nav-link');
+ ham.addEventListener('click',()=>{
+    links.classList.toggle('.show')
+});  */
+
+/*  // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+ */
