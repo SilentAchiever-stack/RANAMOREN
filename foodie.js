@@ -215,6 +215,7 @@ class AgroTechMarketplace {
 
     renderProducts() {
         const productsGrid = document.getElementById('productsGrid');
+        //if theres no product stop the function immediately
         if (!productsGrid) return;
 
         const productsHTML = this.products.map(product => `

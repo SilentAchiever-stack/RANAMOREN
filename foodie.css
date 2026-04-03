@@ -15,8 +15,7 @@ body {
 }
 
  .container {
-    max-width: 1000px;
-    margin: 0 auto;
+    width:100%;
     padding: 0 20px;
 } 
 header {
@@ -109,12 +108,12 @@ header {
     align-items: center;
    margin-left:30px;
 }
- .ham{
+ .ham {
     display:none;
 } 
-.ham .hide{
+/* .ham .hide{
     display:none;
-}
+} */
 
 /* .profile-btn */
 .cart-btn,
@@ -154,7 +153,7 @@ header {
     justify-content: center;
 }
 
-.hamburger {
+/* .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
@@ -167,7 +166,7 @@ header {
     height: 3px;
     background: white;
     transition: 0.3s;
-}
+} */
 
 /* Hero Section */
 .hero {
@@ -962,13 +961,10 @@ header {
     padding: 15px;
 }
 
-/* Responsive Design */
+
+/* media query */
 /* Responsive Media Queries */
 @media (max-width: 1200px) {
-
-    /*  .container {
-        max-width: 1000px;
-    } */
     .hero-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -986,10 +982,6 @@ header {
 }
 
 @media (max-width: 900px) {
-
-    /* .container {
-        max-width: 700px;
-    } */
     .nav-menu {
         gap: 1.5rem;
     }
@@ -1012,8 +1004,6 @@ header {
     .menu-toggle {
         display: block;
     }
-
-    /*  */
 
     .hero-content {
         grid-template-columns: 1fr;
@@ -1038,17 +1028,18 @@ header {
     }
 
     .category-card h3 {
-        font-size: 40px;
+        font-size: 1.8rem;
     }
 
     .category-card p {
-        font-size: 35px;
+        font-size: 1.2rem;
     }
 
     .category-card .product-count {
-        font-size: 30px;
+        font-size: 1.2rem;
         width: 150px;
-        padding: 17px 17px;
+        padding: 15px;
+        margin: 0 auto;
     }
 
     .categories-grid {
@@ -1088,18 +1079,9 @@ header {
     .farm-illustration i {
         font-size: 6rem;
     }
-
-    /*  .contact-content{
-        grid-template-columns: 1fr;
-    } */
 }
 
 @media (max-width: 600px) {
-
-    /* .container {
-            max-width: 100%;
-            padding: 0 8px;
-        } */
     .header {
         height: 70px;
         padding: 0.5rem 0;
@@ -1170,6 +1152,7 @@ header {
 @media (max-width: 525px) {
     .container {
         padding: 0 15px;
+        width: 100%;
     }
 
     .hero {
@@ -1178,10 +1161,6 @@ header {
 
     .hero-text h1 {
         font-size: 2rem;
-    }
-
-    .container {
-        width: 100%;
     }
 
     .section-title {
@@ -1213,508 +1192,283 @@ header {
 }
 
 @media (max-width: 400px) {
-
-    /* .header{
-        width:1200px;
-       
-    } */
     .logo {
-        display: flex;
-        align-items: center;
-        font-size: 40px;
-        font-weight: bold;
-        color: #ec4899;
-        opacity: 0;
+        font-size: 24px;
         animation: enterFromRight 0.8s ease 0.2s forwards;
     }
 
-
-    @keyframes enterFromRight {
-        0% {
-            opacity: 0;
-            transform: translateX(100px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
     .logo i {
-        margin-right: 10px;
-        margin-left: 20px;
-        color: #f9a8d4;
-        font-size: 50px;
-        opacity: 0;
-        animation: enterFromBottom 0.8s ease 1.2s forwards;
+        margin-right: 5px;
+        margin-left: 10px;
+        font-size: 28px;
     }
-
-    @keyframes enterFromBottom {
-        0% {
-            opacity: 0;
-            transform: translatey(100px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translatey(0);
-        }
-    }
-
-    /* .nav-menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
-        background: #2c5530;
-        z-index: 1001;
-        padding: 1rem 0;
-    } */
-
-    /* .nav-menu.active {
-        display: flex;
-    } */
 
     .nav-actions button {
-        font-size: 37px;
-        width: 100px;
-        padding: 20px 30px 20px 30px;
-        text-align: center;
+        font-size: 14px;
+        width: auto;
+        padding: 8px 12px;
     }
-    
+
     .gono {
         font-size: 1rem;
     }
 
-    .nav-actions button {
-        font-size: 1rem;
-        padding: 0.3rem;
-    }
-
     .nav-link {
-        display:none;
+        display: none;
         flex-direction: column;
-        width:100%;
+        width: 100%;
         height: 100vh;
-        overflow: visible;
+        top: 0;
+        right: -100%;
+        background: #1a1a1a;
     }
 
-        .ham {
-           display: block; 
-            color: pink;
-            background-color: black;
-            border: 2px solid pink;
-            margin-right:70px;
-            font-size: 30px;
-            padding:15px 15px;
-    
-        }
-        .ham .hide{
-            display:none;
-        }
+    .ham {
+        display: block;
+        color: pink;
+        background-color: transparent;
+        border: none;
+        margin-left: auto;
+        font-size: 30px;
+        padding: 10px;
+    }
 
-        .nav-link.show {
-            width:100%;
-            height: 150px;
-            display: flex;
-            margin-top: 40px;
-            left: 0;
-            color: white;
-            font-size: 40px;
-            font-style: oblique;
-            font-family: fantasy;
-        }
+    .nav-link.show {
+        width: 100%;
+        right: 0;
+        display: flex;
+        margin-top: 20px;
+        color: white;
+        font-size: 20px;
+        font-style: oblique;
+        font-family: fantasy;
+    }
 
-        .nav-link a{
-            display:block;
-            padding: 10px 0;
-             /* background-color: black; */
-        }
+    .nav-link a {
+        display: block;
+        padding: 10px 0;
+        background: #1a1a1a;
+    }
 
     .hero {
         position: relative;
-        height: 100vh;
-        width: 1000px;
+        width: 990px;
+        object-fit: cover;
         background-image: url('https://i.pinimg.com/1200x/9a/32/51/9a3251e176544a068d5d6c9f46d51a8e.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
     }
 
     .farm-illustration .tract {
         display: none;
     }
 
-    .hero::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        /* Black overlay at 50% opacity */
-        z-index: 1;
-    }
-
     .hero-content {
-        position: relative;
-        z-index: 2;
-        /* Sits above the overlay */
-        text-align: center;
-        max-width: 800px;
-        padding: 0 20px;
+        padding: 0 15px;
     }
 
     .hero-text h1 {
-        font-size: 55px;
-        color: #999;
-        margin-top: 145px;
-        margin-bottom: 10px;
-        opacity: 0;
-        animation: enterFromRight 0.8s ease forwards;
+        font-size: 32px;
+        margin-top: 100px;
     }
 
     .hero-text p {
-        font-size: 37px;
-        margin-bottom: 2rem;
-        color: white;
-        font-style: oblique;
-        opacity: 0;
-        animation: enterFromLeft 0.8s ease 0.8s forwards;
-    }
-
-    .highlight {
-        display: inline-block;
-        opacity: 0;
-        animation: enterFromRight 0.8s ease 0.4s forwards;
+        font-size: 18px;
+        margin-bottom: 1.5rem;
     }
 
     .hero-buttons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 80px;
+        padding: 0 10px;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .hero-buttons button {
-        padding: 20px 20px;
-        font-size: 25px;
-        font-weight: 800;
-        opacity: 0;
-        animation: enterFromBottom 0.8s ease 1.2s forwards;
-    }
-
-    @keyframes enterFromLeft {
-        0% {
-            opacity: 0;
-            transform: translateX(-100px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-    @keyframes enterFromRight {
-        0% {
-            opacity: 0;
-            transform: translateX(100px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-    @keyframes enterFromBottom {
-        0% {
-            opacity: 0;
-            transform: translateY(50px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        padding: 12px 20px;
+        font-size: 16px;
+        width: 100%;
     }
 
     .section-title {
-        font-size: 3rem;
-        font-style: oblique;
-        opacity: 0;
-        animation: enterFromBottom 0.8s ease 1.2s forwards;
-    }
-
-    @keyframes enterFromLeft {
-        0% {
-            opacity: 0;
-            transform: translateX(-100px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateX(0);
-        }
+        font-size: 2rem;
     }
 
     .categories {
-        padding: 20px 10px;
+        padding: 40px 15px;
         width: 1000px;
-        text-align: center;
-
-    }
-
-    .categories,
-    .category-icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .category-icon .cat {
-        width: 370px;
-        height: 320px;
+        width: 200px;
+        height: 200px;
     }
 
     .category-card h3 {
-        font-size: 40px;
+        font-size: 24px;
     }
 
     .category-card p {
-        font-size: 35px;
+        font-size: 16px;
     }
 
     .category-card .product-count {
-        font-size: 30px;
-        width: 150px;
-        padding: 17px 17px;
+        font-size: 16px;
+        width: auto;
+        padding: 8px 15px;
     }
 
     .products {
-        width: 1000px;
+        width: 900px;
+        padding: 40px 15px;
     }
 
     .products-header .section-title {
-        font-size: 55px;
-        font-style: oblique;
-        opacity: 0;
+        font-size: 2rem;
     }
 
     .filter-tabs button {
-        font-size: 35px;
-        font-weight: 590;
-        padding: 18px 18px;
+        font-size: 14px;
+        padding: 8px 15px;
     }
 
     .product-image .IMG {
-        width: 100%;
-        object-fit: cover;
-        height: 400px;
-        background: linear-gradient(135deg, #fce7f3 0%, #f3e8ff 100%);
+        height: 250px;
     }
 
+    .product-info h3,
     .product-info .product-description,
     .product-category {
-        font-size: 35px;
-    }
-
-    .product-info h3 {
-        font-size: 35px;
+        font-size: 16px;
     }
 
     .product-info .current-price,
     .unit {
-        font-size: 40px;
+        font-size: 18px;
     }
 
-    /* .product-image */
     .product-badges .badge {
-        font-size: 30px;
+        font-size: 12px;
     }
 
     .product-image .farmer-info {
-        font-size: 40px;
-        font-weight: 700;
-        padding: 10px 10px;
+        font-size: 14px;
+        padding: 5px 10px;
     }
 
     .farmer-dashboard {
-        width: 1000px;
-        text-align: center;
-
+        width: 990px;
+        padding: 40px 15px;
     }
 
     .farmer-dashboard,
     .dashboard-content {
-        font-size: 30px;
+        font-size: 16px;
     }
 
     .dashboard-text h2 {
-        font-size: 30px;
-        font-weight: 700;
-    }
-
-    .dashboard-text p {
-        font-size: 30px;
-        font-weight: 500;
-        text-align: justify;
-        padding: 20px;
-    }
-
-    .dashboard-illustration .img {
-        width: 100%;
-        height: 500px;
-    }
-
-    .contact {
-        width: 1000px;
-        text-align: center;
-    }
-
-    .contact .section-title {
-        font-size: 55px;
-        font-style: oblique;
-    }
-
-    .contact-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-    }
-
-    .contact-info {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .contact-item {
-        display: flex;
-        align-items: flex-start;
-        gap: 1rem;
-    }
-
-    .contact-item i {
-        font-size: 30px;
-        margin-top: 0.25rem;
-    }
-
-    .contact-item h4 {
-        margin-bottom: 0.5rem;
         font-size: 24px;
     }
 
-    .contact-item p {
-        line-height: 1.6;
+    .dashboard-text p {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .dashboard-illustration .img {
+        height: 300px;
+    }
+
+    .contact {
+        width: 990px;
+        padding: 40px 15px;
+    }
+
+    .contact .section-title {
+        font-size: 2rem;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-item i {
+        font-size: 20px;
+    }
+
+    .contact-item h4 {
+        font-size: 18px;
     }
 
     .contact-form {
-        padding: 2rem;
-        border-radius: 20px;
-    }
-
-    .contact-form {
-        width: 600px;
+        width: 100%;
+        padding: 1.5rem;
     }
 
     .contact-form button {
-        width: 350px;
-        padding: 10px 10px;
-        background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
-        border: none;
-        border-radius: 25px;
-        color: white;
-        font-size: 30px;
-        cursor: pointer;
-        transition: all 0.3s ease;
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
     }
 
     .form-group input,
     .form-group textarea {
-        padding: 15px 20px;
-        border: 2px solid #333;
-        background: transparent;
-        color: white;
-        border-radius: 10px;
-        font-size: 35.8px;
-        transition: border-color 0.3s ease;
+        font-size: 16px;
+        padding: 12px 15px;
     }
 
-    .nav-actions button {
-        padding: 10px;
-        font-size: 35px;
-        margin-right: 5px;
-    }
-
-    /*  button */
     .cart-count {
-        padding: 18px;
-        font-size: 20px;
+        padding: 4px;
+        font-size: 12px;
+        width: 20px;
+        height: 20px;
     }
 
     .footer {
-        width: 1000px;
+        width: 990px;
     }
 
     .footer-content {
-        padding: 20px, 15px;
-        font-size: 40px;
+        padding: 20px 15px;
+        font-size: 16px;
     }
 
     .footer-section .gono {
-        font-size: 70px;
+        font-size: 30px;
     }
 
     .footer-section h4 {
-        font-size: 36px;
+        font-size: 20px;
+    }
+
+    .social-links {
+        justify-content: center;
     }
 
     .social-links a {
-        font-size: 45px;
-        width: 90px;
-        height: 60px;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
     }
 
     .newsletter-form input,
     .newsletter-form textarea {
-        width: 90%;
-        padding: 15px 20px;
-        border: 2px solid #333;
-        background: transparent;
-        color: white;
-        border-radius: 10px;
-        font-size: 40px;
-        transition: border-color 0.3s ease;
+        width: 100%;
+        font-size: 16px;
     }
 
     .newsletter-form button {
-        width: 90px;
-        padding: 10px 10px;
-        background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
-        border: none;
-        border-radius: 25px;
-        color: white;
-        font-size: 40px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
-
-    .newsletter-form button:hover {
-        transform: scale(1.05);
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
     }
 
     .footer-bottom {
-        font-size: 30px;
-        border-top: 2px solid pink;
+        font-size: 14px;
     }
 }
