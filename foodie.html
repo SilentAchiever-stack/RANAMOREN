@@ -15,14 +15,14 @@
     <header class="header">
         <div class="logo">
             <i class="fas fa-seedling"></i>
-            <span>AgroTech</span>
+            <span class="TECH">AgroTech</span>
         </div>
         <div class="nav-link" id="nav-link">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#categories" class="nav-link">categories</a>
-            <a href="#products" class="nav-link">Products</a>
-            <a href="#farmers" class="nav-link">Farmers</a>
-           <a href="#contact" class="nav-link">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#categories">categories</a>
+            <a href="#products" >Products</a>
+            <a href="#farmers" >Farmers</a>
+           <a href="#contact">Contact</a>
          </div>
             <div class="nav-actions">
                 <button class="cart-btn" id="cartBtn">
@@ -30,7 +30,7 @@
                     <span class="cart-count">0</span>
                 </button>
             </div>
-            <button class="ham" id="ham"> <i class=' bx bx-menu '></i>
+            <button class="hamburger" id="hamburger"> <i class=' fas fa-bars '></i>
             </button>
     </header>
 
@@ -46,7 +46,7 @@
                         <i class="fas fa-shopping-basket"></i>
                         Shop Now
                     </button>
-                    <button class="btn btn-secondary" onclick="scrollToSection('farmers')">
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
                         <i class="fas fa-tractor"></i>
                         Become a Seller
                     </button>
@@ -56,14 +56,7 @@
                 <div class="farm-illustration">
                     <img src="https://i.pinimg.com/1200x/9a/32/51/9a3251e176544a068d5d6c9f46d51a8e.jpg" alt=""
                         class="tract">
-                    <!-- <img src="https://i.pinimg.com/1200x/9a/32/51/9a3251e176544a068d5d6c9f46d51a8e.jpg" alt=""> -->
                 </div>
-
-                <!-- <div class="floating-elements">
-                    <div class="floating-item"><i class="fas fa-apple-alt"></i></div>
-                    <div class="floating-item"><i class="fas fa-carrot"></i></div>
-                    <div class="floating-item"><i class="fas fa-leaf"></i></div>
-                </div> -->
             </div>
         </div>
     </section>
@@ -118,7 +111,7 @@
 
     <!-- Products Section -->
     <section id="products" class="products">
-        <div class="container">
+        <div class="containers">
             <div class="products-header">
                 <h2 class="section-title">Featured Products</h2>
                 <div class="filter-tabs">
@@ -137,9 +130,9 @@
 
     <!-- Farmer Dashboard Section -->
     <section id="farmers" class="farmer-dashboard">
-        <div class="container">
+        <div class="containerd">
             <div class="dashboard-content">
-                <div class="dashboard-text">
+                <a class="dashboard-text">
                     <h2>Join Our Farming Community</h2>
                     <p>Become part of our growing network of local farmers and reach customers who value fresh,
                         sustainable produce. Our platform makes it easy to showcase your products and manage your sales.
@@ -166,11 +159,10 @@
                             <span>Competitive pricing and fair payments</span>
                         </div>
                     </div>
-                    <a href="JobApllication.html" button class="btn btn-primary">
-                        <i class="fas fa-user-plus"></i>
-                        Start Selling Today
-                    </button></a>
-                </div>
+                        
+                        <i class="fas fa-user-plus" id="plus">
+                        Start Selling Today </a></i>
+                
                 <div class="dashboard-image">
                     <div class="dashboard-illustration">
                         <img src="https://i.pinimg.com/736x/ec/be/07/ecbe07eabb98f298a78001ef4892a3a0.jpg" alt=""
@@ -178,14 +170,14 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
     </section>
 
     <!-- Contact Section -->
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+        <div class="containers">
+            <h2 class="section-titles">Get In Touch</h2>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
@@ -236,7 +228,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="containerd">
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="gono">
@@ -312,6 +304,6 @@
             </button>
         </div>
     </div>
-    <script src="foodie.js"></script>
+    <script src="java.js"></script>
 </body>
 </html>
