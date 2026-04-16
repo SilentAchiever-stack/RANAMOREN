@@ -10,37 +10,35 @@
 </head>
 
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="nav-brand">
                 <h1><i class="fas fa-utensils"></i> Africana Swallow</h1>
                 <p class="tagline">Authentic African Flavors</p>
             </div>
-            <nav class="nav-menu">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#menu" class="nav-link">Menu</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </nav>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
             <div class="nav-actions">
                 <button class="cart-btn" id="cartBtn">
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart-count" id="cartCount">0</span>
                 </button>
-                <button class="menu-toggle" id="menuToggle">
-                    <i class="fas fa-bars"></i>
-                </button>
             </div>
+            <button class="ham" id="ham">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
-
-    <!-- Hero Section -->
+<!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h2>Welcome to Africana Swallow</h2>
-            <p>Experience the rich flavors and traditions of authentic African cuisine</p>
+            <h2>Welcome to African Swallow</h2>
+            <p>A perfect taste of home cooked meal</p>
             <div class="hero-buttons">
                 <button class="cta-btn primary" onclick="scrollToSection('menu')">
                     <i class="fas fa-utensils"></i>
@@ -52,13 +50,6 @@
                 </button>
             </div>
         </div>
-        <div class="hero-image">
-            <div class="food-showcase">
-                <div class="food-item">🍛</div>
-                <div class="food-item">🍚</div>
-                <div class="food-item">🥘</div>
-            </div>
-        </div>
     </section>
 
     <!-- Featured Dishes -->
@@ -67,17 +58,21 @@
             <h2 class="section-title">Our Signature Dishes</h2>
             <div class="featured-grid">
                 <div class="featured-card">
-                    <div class="featured-image">🍛</div>
+                    <div class="featured-image">
+                        <img src="https://i.pinimg.com/1200x/e3/d4/e9/e3d4e9461a93889cd0224b0387b3e9cb.jpg" alt=""class="yor">
+                    </div>
                     <h3>Jollof Rice</h3>
                     <p>The crown jewel of West African cuisine</p>
                 </div>
                 <div class="featured-card">
-                    <div class="featured-image">🥘</div>
+                    <div class="featured-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYnpRdbNVpMlvqndzutOCKpKC6Jsl3tNQPhA&s" alt="" class="yor"></div>
                     <h3>Amala & Ewedu</h3>
                     <p>Traditional Yoruba delicacy with rich soup</p>
                 </div>
                 <div class="featured-card">
-                    <div class="featured-image">🍚</div>
+                    <div class="featured-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaOD_PHNa9sVktSnfmiGhNF0_Ual93JfDKhg&s" alt="" class="yor"></div>
                     <h3>Pounded Yam</h3>
                     <p>Smooth, stretchy perfection with your choice of soup</p>
                 </div>
@@ -97,7 +92,7 @@
                 <button class="category-btn" data-category="sides">Sides</button>
             </div>
             <div class="menu-grid" id="menuGrid">
-                <!-- Menu items will be dynamically loaded here -->
+                <!-- Menu items will be loaded here -->
             </div>
         </div>
     </section>
@@ -115,7 +110,7 @@
                     <div class="about-features">
                         <div class="feature">
                             <i class="fas fa-leaf"></i>
-                            <div>
+                        <div>
                                 <h4>Fresh Ingredients</h4>
                                 <p>We source the finest African spices and fresh ingredients</p>
                             </div>
@@ -138,8 +133,8 @@
                 </div>
                 <div class="about-image">
                     <div class="chef-placeholder">
-                        <i class="fas fa-chef-hat"></i>
-                        <p>Our Expert Chefs</p>
+                        <img src= "https://media-los4-1.cdn.whatsapp.net/v/t61.24694-24/597114396_1183637379883650_4302082692520068734_n.jpg?ccb=11-4&oh=01_Q5Aa4AF3UsEL0cxAMkNclgPOqgWR-Wdw_nQ0TGsnBWvkGSTJ_A&oe=69DA48FC&_nc_sid=5e03e0&_nc_cat=106" alt="foodie" class="afri">
+                      <!--   <p>Our Expert Chefs</p> -->
                     </div>
                 </div>
             </div>
@@ -250,7 +245,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3><i class="fas fa-utensils"></i> Africana Swallow</h3>
+                    <h3><i class="fas fa-utensils" class="fas"></i> African Swallow</h3>
                     <p>Bringing authentic African flavors to your table with love and tradition.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook"></i></a>
@@ -285,7 +280,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Africana Swallow. All rights reserved.</p>
+                <p>&copy; 2025 African Swallow. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -297,8 +292,6 @@
             <span id="toastMessage">Item added to cart!</span>
         </div>
     </div>
-
     <script src="africana-swallow.js"></script>
 </body>
-
 </html>
