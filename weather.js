@@ -1,5 +1,5 @@
 // Weather app functionality
-const API_KEY = 'YOUR_API_KEY_HERE'; // You'll need to get this from OpenWeatherMap
+const API_KEY = '937de8babbb0524bab568bd38c630a6f'; 
 const API_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
 // DOM elements
@@ -51,7 +51,7 @@ async function handleSearch() {
     }
 
     // Check if API key is set
-    if (API_KEY === 'YOUR_API_KEY_HERE') {
+    if (API_KEY === '937de8babbb0524bab568bd38c630a6f') {
         showDemoData(city);
         return;
     }
@@ -166,10 +166,10 @@ function showDemoData(city) {
 
     weatherInfo.classList.add('show');
 
-    // Show API key message
-    setTimeout(() => {
+  // Show API key message
+   /*  setTimeout(() => {
         alert('Demo mode: To get real weather data, sign up for a free API key at openweathermap.org and replace YOUR_API_KEY_HERE in weather.js');
-    }, 1000);
+    }, 1000);  */
 }
 
 function showLoading() {
@@ -196,7 +196,7 @@ function getUserLocationWeather() {
             async (position) => {
                 const { latitude, longitude } = position.coords;
 
-                if (API_KEY !== 'YOUR_API_KEY_HERE') {
+                if (API_KEY !== '937de8babbb0524bab568bd38c630a6f') {
                     try {
                         const response = await fetch(
                             `${API_URL}?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`
