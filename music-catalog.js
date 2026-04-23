@@ -33,7 +33,7 @@ class SoundWave {
                 genre: "pop",
                 year: 2019,
                 duration: "3:20",
-                image: "🎵",
+                image: "https://i.pinimg.com/736x/04/41/cf/0441cf328cb8643c6911f2ca23ca6278.jpg",
                 spotifyId: "0VjIjW4GlUZAMYd2vXMi3b",
                 youtubeId: "4NRXx6U8ABQ",
                 soundcloudUrl: "https://soundcloud.com/theweeknd/blinding-lights",
@@ -46,7 +46,7 @@ class SoundWave {
                 genre: "pop",
                 year: 2020,
                 duration: "2:54",
-                image: "🍉",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6kG3G9WBSv_DZpu0h5c796wiBWp-jbDd2gw&s",
                 spotifyId: "6UelLqGlWMcVH1E5c4H7lY",
                 youtubeId: "E07s5ZYygMg",
                 soundcloudUrl: "https://soundcloud.com/harrystyles/watermelon-sugar",
@@ -59,7 +59,7 @@ class SoundWave {
                 genre: "pop",
                 year: 2020,
                 duration: "3:23",
-                image: "✨",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjjjrkWPE26Z87m_5CqoDP8gaapV22UM6MPA&s",
                 spotifyId: "463CkQjx2Zk1yXoBuierM9",
                 youtubeId: "TUVcZfQe-Kw",
                 soundcloudUrl: "https://soundcloud.com/dualipa/levitating",
@@ -74,7 +74,7 @@ class SoundWave {
                 genre: "rock",
                 year: 1975,
                 duration: "5:55",
-                image: "👑",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIV42TusCuAzx2FQTVAYNnq9PK1V6yKlRb7g&s",
                 spotifyId: "4u7EnebtmKWzUH433cf5Qv",
                 youtubeId: "fJ9rUzIMcZQ",
                 soundcloudUrl: "https://soundcloud.com/queen-official/bohemian-rhapsody",
@@ -87,7 +87,7 @@ class SoundWave {
                 genre: "rock",
                 year: 1991,
                 duration: "5:01",
-                image: "🎸",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ037mxKjRqY3CyIsVCJFAZjBXD_PrsJQ133g&s",
                 spotifyId: "4CeeEOM32jQcH3eN9Q2dGj",
                 youtubeId: "hTWKbfoikeg",
                 soundcloudUrl: "https://soundcloud.com/nirvana/smells-like-teen-spirit",
@@ -100,7 +100,7 @@ class SoundWave {
                 genre: "rock",
                 year: 1976,
                 duration: "6:30",
-                image: "🏨",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS73xEWslfGIyRKUCvHNUu7IBuP1rdRRZ4Ug&s",
                 spotifyId: "40riOy7x9W7GXjyGp4pjAv",
                 youtubeId: "09839DpTctU",
                 soundcloudUrl: "https://soundcloud.com/eagles/hotel-california",
@@ -115,7 +115,7 @@ class SoundWave {
                 genre: "hip-hop",
                 year: 2018,
                 duration: "3:19",
-                image: "🙏",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGdoK3x6-JWgNpBSynpgyYGazRoCT84Jh1aA&s",
                 spotifyId: "6DCZcSspjsKoFjzjrWoCdn",
                 youtubeId: "xpVfcZ0ZcFM",
                 soundcloudUrl: "https://soundcloud.com/octobersveryown/gods-plan",
@@ -128,7 +128,7 @@ class SoundWave {
                 genre: "hip-hop",
                 year: 2017,
                 duration: "2:57",
-                image: "🎤",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqiAAbIojZpiIeS19ET2TLFLO33LW589dbbA&s",
                 spotifyId: "7KXjTSCq5nL1LoYtL7XAwS",
                 youtubeId: "tvTRZJ-4EyI",
                 soundcloudUrl: "https://soundcloud.com/kendrick-lamar-music/humble",
@@ -143,7 +143,7 @@ class SoundWave {
                 genre: "electronic",
                 year: 2009,
                 duration: "10:36",
-                image: "🎛️",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHE1atagmp9Vr6v0B2kGUFVJSe7bWGXQIuFg&s",
                 spotifyId: "7MXVkk9YMctZqd1Srtv4MB",
                 youtubeId: "tKi9Z-f6qX4",
                 soundcloudUrl: "https://soundcloud.com/deadmau5/strobe",
@@ -156,7 +156,7 @@ class SoundWave {
                 genre: "electronic",
                 year: 2012,
                 duration: "4:31",
-                image: "💎",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREJE1180Rnk_IFgTxcG8ghPGqauLuywN-4RA&s",
                 spotifyId: "3vdLVMw6aJmKwNcs5dBjWw",
                 youtubeId: "IxxstCcJlsc",
                 soundcloudUrl: "https://soundcloud.com/zedd/clarity-feat-foxes",
@@ -171,7 +171,7 @@ class SoundWave {
                 genre: "jazz",
                 year: 1959,
                 duration: "5:24",
-                image: "🎺",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGCYhN9BUHjco7cmUWw9pPBGSkz_rBAQxi0w&s",
                 spotifyId: "1YQWosTIljIvxAgHWTp7KP",
                 youtubeId: "vmDDOFXSgAs",
                 soundcloudUrl: "https://soundcloud.com/jazz-classics/take-five",
@@ -184,7 +184,7 @@ class SoundWave {
                 genre: "jazz",
                 year: 1964,
                 duration: "2:28",
-                image: "🌙",
+                image: "https://i.scdn.co/image/ab67616d0000b273eda558a2542990afb0bfcb32",
                 spotifyId: "5b7OOEXyNNhLNTbKYCgq0w",
                 youtubeId: "5hxibHJOE5E",
                 soundcloudUrl: "https://soundcloud.com/frank-sinatra/fly-me-to-the-moon",
@@ -199,7 +199,7 @@ class SoundWave {
                 genre: "classical",
                 year: 1824,
                 duration: "65:00",
-                image: "🎻",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSehTwsAGJT7iSgPdyf3j-GO-iF8TJ5IcW9RQ&s",
                 spotifyId: "2Yb8ULz8LYvLOcFFBdZhfF",
                 youtubeId: "t3217H8JppI",
                 soundcloudUrl: "https://soundcloud.com/classical-music/beethoven-symphony-9",
@@ -214,7 +214,7 @@ class SoundWave {
                 genre: "indie",
                 year: 2007,
                 duration: "3:49",
-                image: "⚡",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaT-55kD33uegoa0NldZovOnzVQYdkBQMUww&s",
                 spotifyId: "3FtYbEfTbdJbJspb3ReNCX",
                 youtubeId: "MmZexg8sxyk",
                 soundcloudUrl: "https://soundcloud.com/mgmt/electric-feel",
@@ -229,7 +229,7 @@ class SoundWave {
                 genre: "country",
                 year: 2019,
                 duration: "2:37",
-                image: "🤠",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl6GC56Do6KJdm_qV-EZl-Mf14x3hSyhBItQ&s",
                 spotifyId: "2YpeDb67231RjR0MgVLzsG",
                 youtubeId: "w2Ov5jzm3j8",
                 soundcloudUrl: "https://soundcloud.com/lilnasx/old-town-road",
@@ -245,7 +245,7 @@ class SoundWave {
                 title: "Today's Top Hits",
                 description: "The most played songs right now",
                 type: "Popular",
-                image: "🔥",
+                image: ".",
                 songCount: 50,
                 spotifyPlaylistId: "37i9dQZF1DXcBWIGoYBM5M"
             },
@@ -254,7 +254,7 @@ class SoundWave {
                 title: "Chill Vibes",
                 description: "Relax and unwind with these mellow tracks",
                 type: "Mood",
-                image: "🌊",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdA8EgdM7rmHV4Ieq2j0MpTskV9v-dDWd56w&s",
                 songCount: 35,
                 spotifyPlaylistId: "37i9dQZF1DX4WYpdgoIcn6"
             },
@@ -351,17 +351,17 @@ class SoundWave {
     }
 
     setupEventListeners() {
-        // Favorites functionality
+        // Favorites ID
         document.getElementById('favoritesBtn').addEventListener('click', () => this.toggleFavorites());
         document.getElementById('closeFavorites').addEventListener('click', () => this.toggleFavorites());
 
-        // Search functionality
+        // Search ID
         document.getElementById('searchBtn').addEventListener('click', () => this.searchMusic());
         document.getElementById('searchInput').addEventListener('keypress', (e) => {
             if (e.key === 'Enter') this.searchMusic();
         });
 
-        // Filter functionality
+        // Filter ID
         document.getElementById('genreFilter').addEventListener('change', () => this.filterMusic());
         document.getElementById('sortFilter').addEventListener('change', () => this.sortMusic());
         document.getElementById('viewToggle').addEventListener('click', () => this.toggleView());
@@ -377,17 +377,17 @@ class SoundWave {
         });
 
         // Navigation
-        document.querySelectorAll('.nav-link').forEach(link => {
+       document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 const target = link.getAttribute('href').substring(1);
                 this.scrollToSection(target);
                 this.setActiveNavLink(link);
             });
-        });
+        }); 
 
         // Mobile menu toggle
-        document.getElementById('menuToggle').addEventListener('click', () => this.toggleMobileMenu());
+       document.getElementById('menuToggle').addEventListener('click', () => this.toggleMobileMenu());
 
         // Close modals when clicking outside
         document.addEventListener('click', (e) => {
@@ -418,7 +418,7 @@ class SoundWave {
 
         card.innerHTML = `
             <div class="music-card-image">
-                <span style="font-size: 4rem;">${song.image}</span>
+            <img src="${song.image}" alt = "song-image" class="music-image">
                 <button class="play-overlay" onclick="musicApp.playMusic(${song.id})">
                     <i class="fas fa-play"></i>
                 </button>
@@ -455,8 +455,8 @@ class SoundWave {
 
         card.innerHTML = `
             <div class="playlist-card-image">
-                <span style="font-size: 4rem;">${playlist.image}</span>
-                <button class="play-overlay" onclick="musicApp.playPlaylist(${playlist.id})">
+                <div class="playlist-card-type">${playlist.image}</div>
+                <button class="play-overlay" onclick="musicApp.playMusic(${playlist.id})">
                     <i class="fas fa-play"></i>
                 </button>
             </div>
@@ -521,8 +521,8 @@ class SoundWave {
         const song = this.musicCatalog.find(s => s.id === songId);
         if (!song) return;
 
-        this.showPlayer(song);
-        this.showToast(`Now playing: ${song.title} by ${song.artist}`);
+       this.showPlayer(song);
+         this.showToast(`Now playing: ${song.title} by ${song.artist}`); 
     }
 
     playPlaylist(playlistId) {
@@ -530,23 +530,22 @@ class SoundWave {
         if (!playlist) return;
 
         this.showPlaylistPlayer(playlist);
-        this.showToast(`Playing playlist: ${playlist.title}`);
+         this.showToast(`Playing playlist: ${playlist.title}`); 
     }
 
     playArtist(artistId) {
         const artist = this.artists.find(a => a.id === artistId);
         if (!artist) return;
 
-        this.showToast(`Playing top songs by ${artist.name}`);
+        this.showToast(`Playing top songs by ${artist.name}`); 
     }
-
+ 
     showPlayer(song) {
         const playerModal = document.getElementById('playerModal');
         const playerTitle = document.getElementById('playerTitle');
         const playerContent = document.getElementById('playerContent');
 
         playerTitle.textContent = `${song.title} - ${song.artist}`;
-
         // Create multiple iframe options for the user to choose from
         playerContent.innerHTML = `
             <div class="player-info">
@@ -828,7 +827,7 @@ class SoundWave {
         setTimeout(() => {
             toast.classList.remove('show');
         }, 3000);
-    }
+    } 
 
     closeModals() {
         document.querySelectorAll('.modal').forEach(modal => {
@@ -849,12 +848,12 @@ class SoundWave {
         }
     }
 
-    setActiveNavLink(activeLink) {
+     setActiveNavLink(activeLink) {
         document.querySelectorAll('.nav-link').forEach(link => {
             link.classList.remove('active');
         });
         activeLink.classList.add('active');
-    }
+    } 
 
     setupSmoothScrolling() {
         // Update active nav link on scroll
@@ -887,9 +886,9 @@ class SoundWave {
         });
     }
 
-    toggleMobileMenu() {
+   /*  toggleMobileMenu() {
         this.showToast('Mobile menu - Feature coming soon!');
-    }
+    } */
 }
 
 // Global functions for onclick handlers

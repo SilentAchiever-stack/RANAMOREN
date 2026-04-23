@@ -4,20 +4,23 @@
     box-sizing: border-box;
 }
 
-body {
+
+html,body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
     background: #0a0a0a;
     color: #ffffff;
+    width: 100%;
 }
 
 .container {
-    max-width: 1200px;
+    height: 100%;
+    max-width:100%;
     margin: 0 auto;
     padding: 0 20px;
-}
+} 
 
 /* Header */
 .header {
@@ -30,6 +33,7 @@ body {
     z-index: 1000;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
+    width:100%; 
 }
 
 .header .container {
@@ -368,19 +372,35 @@ body {
     background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
     border-radius: 2px;
 }
-
+.catalog-header{
+    padding: 20px;
+    width:100%;
+}
 /* Featured Grid */
 .featured-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-}
+    padding: 20px;
+    width: 100%;
 
+}
+.image{
+    width:100%;
+}
+.favorite-item-image .images{
+    width:100%;
+    object-fit: cover;
+    height:100%;
+    border-radius: 30px;
+}
 /* Genres Grid */
 .genres-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
+    padding: 20px;
+    width: 100%;
 }
 
 .genre-card {
@@ -491,6 +511,8 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 2rem;
+    padding: 20px;
+    width: 100%;
 }
 
 /* Music Card */
@@ -503,6 +525,7 @@ body {
     transition: all 0.3s ease;
     border: 2px solid transparent;
     position: relative;
+    width: 100%;
 }
 
 .music-card:hover,
@@ -785,7 +808,9 @@ body {
     gap: 2rem;
     margin-bottom: 2rem;
 }
-
+.footer-section{
+    padding:20px;
+}
 .footer-section h3,
 .footer-section h4 {
     margin-bottom: 1rem;
@@ -921,8 +946,21 @@ body {
 }
 
 @media (max-width: 480px) {
+    .hero-content{
+        height: 40%;
+    }
+
+    .nav-brand h1{
+        font-size: 20px;
+    }
+
+    .search-box{
+       display:none; 
+    }
+
     .hero-content h2 {
-        font-size: 2rem;
+        font-size: 2rem; 
+        margin-top: 70px;
     }
 
     .section-title {
@@ -934,6 +972,7 @@ body {
     .artists-grid,
     .featured-grid {
         grid-template-columns: 1fr;
+        padding: 20px;
     }
 
     .hero-buttons {
@@ -945,5 +984,14 @@ body {
         width: 100%;
         max-width: 250px;
         justify-content: center;
+    }
+    .genres-grid{
+        padding:20px ;
+    }
+    .footer-section{
+        padding: 20px;
+    }
+    .footer-bottom{
+        border-top: 2px solid white;
     }
 }
