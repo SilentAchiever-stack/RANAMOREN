@@ -24,7 +24,7 @@ class TrendverseStore {
                 category: "clothing",
                 price: 29.99,
                 description: "Comfortable and stylish cotton t-shirt perfect for everyday wear.",
-                image: "👕",
+                image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop",
                 badge: "New",
                 rating: 4.5
             },
@@ -34,7 +34,7 @@ class TrendverseStore {
                 category: "electronics",
                 price: 89.99,
                 description: "High-quality wireless headphones with noise cancellation.",
-                image: "🎧",
+                image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop",
                 badge: "Popular",
                 rating: 4.8
             },
@@ -44,7 +44,7 @@ class TrendverseStore {
                 category: "accessories",
                 price: 149.99,
                 description: "Stylish sunglasses with UV protection and premium frames.",
-                image: "🕶️",
+                image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=400&fit=crop",
                 badge: "Sale",
                 rating: 4.3
             },
@@ -54,7 +54,7 @@ class TrendverseStore {
                 category: "shoes",
                 price: 119.99,
                 description: "Comfortable running shoes with advanced cushioning technology.",
-                image: "👟",
+                image: "https://i.pinimg.com/736x/1c/7a/ed/1c7aedae907675647abdefecb50821eb.jpg",
                 badge: "New",
                 rating: 4.6
             },
@@ -64,7 +64,7 @@ class TrendverseStore {
                 category: "clothing",
                 price: 199.99,
                 description: "Premium leather jacket with modern design and perfect fit.",
-                image: "🧥",
+                image: "https://i.pinimg.com/1200x/dd/34/e1/dd34e10b4b1f9933f5afa26fc0ea91b5.jpg",
                 badge: "Premium",
                 rating: 4.7
             },
@@ -74,7 +74,7 @@ class TrendverseStore {
                 category: "electronics",
                 price: 299.99,
                 description: "Advanced smartwatch with fitness tracking and notifications.",
-                image: "⌚",
+                image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop",
                 badge: "Hot",
                 rating: 4.4
             },
@@ -84,7 +84,7 @@ class TrendverseStore {
                 category: "accessories",
                 price: 79.99,
                 description: "Elegant gold-plated chain necklace for special occasions.",
-                image: "📿",
+                image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&h=400&fit=crop",
                 badge: "Luxury",
                 rating: 4.2
             },
@@ -94,7 +94,7 @@ class TrendverseStore {
                 category: "shoes",
                 price: 69.99,
                 description: "Classic canvas sneakers with vintage style and comfort.",
-                image: "👟",
+                image: "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop",
                 badge: "Classic",
                 rating: 4.1
             },
@@ -104,8 +104,7 @@ class TrendverseStore {
                 category: "clothing",
                 price: 89.99,
                 description: "High-quality denim jeans with perfect fit and durability.",
-                image: "👖",
-                badge: "Bestseller",
+                image: "https://i.pinimg.com/1200x/36/b7/01/36b70127b9901df4efaa232a78c6c031.jpg",
                 rating: 4.5
             },
             {
@@ -114,7 +113,7 @@ class TrendverseStore {
                 category: "electronics",
                 price: 39.99,
                 description: "Ergonomic wireless mouse with precision tracking.",
-                image: "🖱️",
+                image: "https://images.unsplash.com/photo-1527814050087-3793815479db?w=400&h=400&fit=crop",
                 badge: "Tech",
                 rating: 4.3
             },
@@ -124,7 +123,7 @@ class TrendverseStore {
                 category: "accessories",
                 price: 159.99,
                 description: "Stylish handbag with premium materials and elegant design.",
-                image: "👜",
+                image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=400&fit=crop",
                 badge: "Designer",
                 rating: 4.6
             },
@@ -134,7 +133,7 @@ class TrendverseStore {
                 category: "shoes",
                 price: 139.99,
                 description: "Durable hiking boots with waterproof protection.",
-                image: "🥾",
+                image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop",
                 badge: "Outdoor",
                 rating: 4.4
             }
@@ -206,7 +205,7 @@ class TrendverseStore {
         card.className = 'product-card';
         card.innerHTML = `
             <div class="product-image">
-                <span style="font-size: 4rem;">${product.image}</span>
+                <img src="${product.image}" alt="${product.name}" style="width: 100%; height: 100%; object-fit: cover;">
                 <div class="product-badge">${product.badge}</div>
             </div>
             <div class="product-info">
@@ -223,7 +222,7 @@ class TrendverseStore {
         `;
 
         card.addEventListener('click', (e) => {
-            if (!e.target.classList.contains('add-to-cart')) {
+            if (!e.target.classList.contains('add-to-cart') && !e.target.closest('.add-to-cart')) {
                 this.showProductDetail(product);
             }
         });
@@ -320,7 +319,7 @@ class TrendverseStore {
             cartItem.className = 'cart-item';
             cartItem.innerHTML = `
                 <div class="cart-item-image">
-                    <span style="font-size: 1.5rem;">${item.image}</span>
+                    <img src="${item.image}" alt="${item.name}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
                 </div>
                 <div class="cart-item-info">
                     <div class="cart-item-name">${item.name}</div>
@@ -435,15 +434,38 @@ class TrendverseStore {
         const total = this.cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
         const itemCount = this.cart.reduce((sum, item) => sum + item.quantity, 0);
 
-        // Simulate checkout process
-        this.showToast('Processing your order...');
+        // Show processing message
+        const cartModal = document.getElementById('cartModal');
+        const cartItems = document.getElementById('cartItems');
+        const originalContent = cartItems.innerHTML;
+
+        cartItems.innerHTML = `
+            <div style="text-align: center; padding: 3rem 2rem; color: #333;">
+                <i class="fas fa-spinner fa-spin" style="font-size: 3rem; color: #e74c3c; margin-bottom: 1rem;"></i>
+                <p style="font-size: 1.1rem; font-weight: 600;">Processing your order...</p>
+            </div>
+        `;
 
         setTimeout(() => {
-            this.cart = [];
-            this.saveCart();
-            this.updateCartUI();
-            this.toggleCart();
-            this.showToast(`Order placed successfully! Total: $${total.toFixed(2)} for ${itemCount} items.`);
+            cartItems.innerHTML = `
+                <div style="text-align: center; padding: 3rem 2rem; color: #27ae60;">
+                    <i class="fas fa-check-circle" style="font-size: 4rem; margin-bottom: 1rem;"></i>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem; font-weight: 700;">Order Placed Successfully!</h3>
+                    <p style="font-size: 1rem; margin-bottom: 1.5rem;">Thank you for your purchase</p>
+                    <p style="font-size: 1.2rem; font-weight: 700; color: #e74c3c; margin-bottom: 0.5rem;">Total: $${total.toFixed(2)}</p>
+                    <p style="font-size: 0.95rem; color: #7f8c8d; margin-bottom: 1.5rem;">${itemCount} item${itemCount > 1 ? 's' : ''}</p>
+                </div>
+            `;
+
+            setTimeout(() => {
+                // Clear cart and close modal
+                this.cart = [];
+                this.saveCart();
+                this.updateCartUI();
+                cartModal.classList.remove('show');
+                cartItems.innerHTML = originalContent;
+                this.showToast(`Order placed successfully!`);
+            }, 2000);
         }, 2000);
     }
 
@@ -521,8 +543,16 @@ class TrendverseStore {
     }
 
     toggleMobileMenu() {
-        // Mobile menu functionality can be expanded here
-        this.showToast('Mobile menu - Feature coming soon!');
+        const navMenuMobile = document.getElementById('navMenuMobile');
+        navMenuMobile.classList.toggle('active');
+        
+        // Close menu when a link is clicked
+        const navLinks = navMenuMobile.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenuMobile.classList.remove('active');
+            });
+        });
     }
 }
 

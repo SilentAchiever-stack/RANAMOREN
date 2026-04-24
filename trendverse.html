@@ -14,15 +14,23 @@
     <header class="header">
         <div class="container">
             <div class="nav-brand">
-                <h1><i class="fas fa-shopping-bag"></i> Trendverse</h1>
+                <div class="logo">
+                    <img src="https://i.pinimg.com/1200x/98/9c/e3/989ce3688a3d7ee990516bcb6b824b23.jpg" alt="Trendverse Logo">
+                </div>
+                <h1>Trendverse</h1>
             </div>
             <nav class="nav-menu">
                 <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
                 <a href="#products" class="nav-link">Products</a>
                 <a href="#categories" class="nav-link">Categories</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
             </nav>
+            <nav class="nav-menu-mobile" id="navMenuMobile">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#categories" class="nav-link">Categories</a>
+            </nav> 
             <div class="nav-actions">
                 <div class="search-box">
                     <input type="text" id="searchInput" placeholder="Search products...">
@@ -41,14 +49,24 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-content">
-            <h2>Discover Your Style</h2>
-            <p>Trendy fashion and lifestyle products for the modern you</p>
-            <button class="cta-btn" onclick="scrollToSection('products')">Shop Now</button>
-        </div>
-        <div class="hero-image">
-            <div class="hero-placeholder">
-                <i class="fas fa-tshirt"></i>
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <div class="hero-label">Luxury Fashion</div>
+                <h2>Elevate Your Lifestyle</h2>
+                <p>Discover an exclusive collection of premium fashion and lifestyle products curated for the discerning individual.</p>
+                <div class="hero-buttons">
+                    <button class="cta-btn primary" onclick="scrollToSection('products')">Explore Collection</button>
+                    <button class="cta-btn secondary" onclick="scrollToSection('about')">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-images">
+                <div class="hero-main-image">
+                    <img src="https://i.pinimg.com/1200x/63/98/e7/6398e7752ef95a1a36011beedec39e95.jpg" alt="Luxury Fashion">
+                </div>
+                <div class="hero-side-images">
+                    <img src="https://i.pinimg.com/1200x/dd/34/e1/dd34e10b4b1f9933f5afa26fc0ea91b5.jpg" alt="Leather Jacket">
+                    <img src="https://i.pinimg.com/1200x/36/b7/01/36b70127b9901df4efaa232a78c6c031.jpg" alt="Denim Jeans">
+                </div>
             </div>
         </div>
     </section>
@@ -59,29 +77,33 @@
             <h2 class="section-title">Shop by Category</h2>
             <div class="categories-grid">
                 <div class="category-card" data-category="clothing">
-                    <div class="category-icon">
-                        <i class="fas fa-tshirt"></i>
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=300&h=300&fit=crop" alt="Clothing">
+                        <div class="category-overlay"></div>
                     </div>
                     <h3>Clothing</h3>
                     <p>Trendy apparel for all occasions</p>
                 </div>
                 <div class="category-card" data-category="accessories">
-                    <div class="category-icon">
-                        <i class="fas fa-gem"></i>
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=300&h=300&fit=crop" alt="Accessories">
+                        <div class="category-overlay"></div>
                     </div>
                     <h3>Accessories</h3>
                     <p>Complete your look with style</p>
                 </div>
                 <div class="category-card" data-category="shoes">
-                    <div class="category-icon">
-                        <i class="fas fa-shoe-prints"></i>
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&h=300&fit=crop" alt="Shoes">
+                        <div class="category-overlay"></div>
                     </div>
                     <h3>Shoes</h3>
                     <p>Step out in comfort and style</p>
                 </div>
                 <div class="category-card" data-category="electronics">
-                    <div class="category-icon">
-                        <i class="fas fa-laptop"></i>
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=300&fit=crop" alt="Electronics">
+                        <div class="category-overlay"></div>
                     </div>
                     <h3>Electronics</h3>
                     <p>Latest tech and gadgets</p>
@@ -113,6 +135,47 @@
             </div>
            <div class="products-grid" id="productsGrid">
                 <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-images">
+                    <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=500&fit=crop" alt="About Trendverse">
+                </div>
+                <div class="about-content">
+                    <div class="section-label">About Us</div>
+                    <h2>Your Destination for Luxury & Style</h2>
+                    <p>At Trendverse, we believe that fashion is more than just clothing, it's a form of self expression and a reflection of your personality. Since our founding, we have been committed to bringing the latest trends, timeless classics, and luxury items directly to your doorstep.</p>
+                    <p>Our curated collection features hand-picked pieces from renowned designers and emerging talents, ensuring that every product meets our high standards for quality, style, and craftsmanship. Whether you're looking for everyday essentials or statement pieces, Trendverse has something for everyone.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Premium Quality</h4>
+                                <p>Carefully selected products that stand the test of time</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-shipping-fast"></i>
+                            <div>
+                                <h4>Fast Delivery</h4>
+                                <p>Quick and secure shipping to your location</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-lock"></i>
+                            <div>
+                                <h4>Secure Shopping</h4>
+                                <p>Your privacy and security are our top priorities</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="cta-btn primary" onclick="scrollToSection('products')">Start Shopping</button>
+                </div>
             </div>
         </div>
     </section>
