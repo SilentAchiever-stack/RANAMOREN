@@ -77,7 +77,8 @@ section img:hover {
 }
 
 section video {
-    border-radius: 5px;
+   object-fit: cover; 
+   padding: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
     animation: fadeInUp 0.8s ease-out forwards;
     opacity: 0;
@@ -85,10 +86,10 @@ section video {
     animation-range: entry 0% cover 30%;
 }
 
-section video:hover {
+ section video:hover {
     transform: scale(1.02);
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
+} 
 
 p {
     animation: fadeInUp 0.8s ease-out forwards;
@@ -100,7 +101,7 @@ p {
 p {
     text-align: justify;
     margin-bottom: 15px;
-    line-height: 1.8;
+    line-height: 1.7;
 }
 
 hr {
@@ -225,30 +226,31 @@ hr {
     }
     
     section img {
-        width: 100% !important;
-        height: auto !important;
-        float: none !important;
-        margin: 10px 0 !important;
+        width: 100% ;
+        height: auto ;
+        float: none;
+        margin: 10px 0 ;
         max-width: 100%;
     }
     
     section video {
-        width: 100% !important;
-        height: auto !important;
-        float: none !important;
-        margin: 10px 0 !important;
+        width: 100% ;
+        height: auto ;
+        float: none ;
+        margin: 10px 0 ;
         max-width: 100%;
     }
     
     .video-wrapper {
         flex-direction: column;
-        padding: 12px;
+        /* padding: 20px; */
         gap: 10px;
     }
     
     .video-wrapper iframe {
-        width: 100%;
-        height: auto;
+        width: 100% !important;
+        height: 200px; 
+       padding: 20px auto !important;
     }
     
     h1 {
@@ -259,11 +261,14 @@ hr {
     h4 {
         font-size: 0.95em;
         padding: 12px;
+        text-align: justify;
     }
     
     p {
         text-align: left;
         font-size: 0.95em;
+        padding: 15px;
+        text-align: justify;
     }
     
     .video-link {
@@ -367,9 +372,9 @@ hr {
 }
 
 /* Extra Small Devices */
-@media (max-width: 320px) {
+@media (max-width: 434px) {
     body {
-        padding: 8px;
+        padding: 15px;
     }
     
     h1 {
@@ -383,10 +388,11 @@ hr {
     
     p {
         font-size: 0.85em;
+        padding: 12px;
     }
     
     section {
-        padding: 10px;
+        padding: 10px 0;
         margin: 10px 0;
     }
     
@@ -395,7 +401,8 @@ hr {
     }
     
     .video-wrapper iframe {
-        height: 150px;
+        height: 200px;
+        width:100%;
     }
     
     .video-link {
