@@ -9,7 +9,7 @@ const FooterFunc = () =>{
             let FootContnet= document.getElementById('content')
 
     let Content= `
-    We do not own the copyright to any of the news articles, images, or content
+    We do not own the copyright to any of the news articles, images, videos, or content
     featured on this platform. All content is sourced from external sources and is used for informational
     purposes only. For copyright inquiries, please contact the original source.
     `
