@@ -11,8 +11,10 @@ node_modules
 dist
 dist-ssr
 *.local
+ HEAD
 .env
 build
+ 7a0622dbce8d025307352f95d42aa6c3be71a232
 
 # Editor directories and files
 .vscode/*
@@ -24,5 +26,5 @@ build
 *.njsproj
 *.sln
 *.sw?
-
-#node-modules, .env, buld
+ HEAD
+ 7a0622dbce8d025307352f95d42aa6c3be71a232
