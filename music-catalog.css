@@ -21,18 +21,7 @@ html,body {
     margin: 0 auto;
     padding: 0 20px;
 } 
-
-/* Header */
 .header {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
     width:100%; 
 }
 
@@ -657,10 +646,23 @@ html,body {
     z-index: 2000;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .modal.show {
     display: flex;
+    overflow-y: auto;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+body.modal-open {
+    overflow: hidden;
 }
 
 .modal-content {
@@ -668,11 +670,18 @@ html,body {
     border-radius: 20px;
     max-width: 800px;
     width: 90%;
-    max-height: 80vh;
+    max-height: 90vh;
     overflow-y: auto;
     position: relative;
     animation: modalSlideIn 0.3s ease;
     border: 2px solid #4ecdc4;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.modal:not(.show) .modal-content {
+    transform: translateY(50px);
 }
 
 .player-modal {
@@ -722,6 +731,69 @@ html,body {
 .player-content {
     padding: 2rem;
     text-align: center;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.player-info {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.player-info img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(78, 205, 196, 0.3);
+}
+
+.player-options {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.platform-tabs {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.platform-tab {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #4ecdc4;
+    border: 2px solid #4ecdc4;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.platform-tab:hover {
+    background: #4ecdc4;
+    color: #0a0a0a;
+    transform: translateY(-2px);
+}
+
+.platform-tab.active {
+    background: #4ecdc4;
+    color: #0a0a0a;
+}
+
+.player-iframe-container {
+    width: 100%;
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .player-controls {
@@ -900,10 +972,35 @@ html,body {
 @media (max-width: 768px) {
     .nav-menu {
         display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+        flex-direction: column;
+        gap: 0;
+        padding: 2rem 0;
+        z-index: 999;
+        overflow-y: auto;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .nav-link {
+        padding: 1rem 2rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: left;
     }
 
     .menu-toggle {
         display: block;
+    }
+    
+    .menu-toggle.active {
+        color: #4ecdc4;
     }
 
     .search-box input {
@@ -985,8 +1082,33 @@ html,body {
         max-width: 250px;
         justify-content: center;
     }
+    
+    .modal-content {
+        max-height: 95vh;
+        width: 95%;
+    }
+    
+    .player-info img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .player-content {
+        padding: 1.5rem;
+    }
+    
+    .platform-tabs {
+        gap: 0.5rem;
+    }
+    
+    .platform-tab {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
     .genres-grid{
         padding:20px ;
+        grid-column: 1fr 1fr;
     }
     .footer-section{
         padding: 20px;
@@ -994,4 +1116,10 @@ html,body {
     .footer-bottom{
         border-top: 2px solid white;
     }
+}
+@media(max-width:380px){
+.genres-grid{
+    padding: 20px;
+    grid-column: 1fr 1fr;
+}
 }
