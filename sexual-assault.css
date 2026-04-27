@@ -221,9 +221,13 @@ iframe {
     h1 {
         font-size: 1.5em;
     }
+    h4{
+        text-align: justify;
+    }
     
     p {
         text-align: left;
+        text-align: justify;
     }
 }
 /* footer for all Disclaimer */ #footerContainer {
