@@ -303,6 +303,7 @@ iframe {
         padding: 10px;
         margin: 10px 0;
         border-left-width: 3px;
+        text-align: justify;
     }
     
     main,
@@ -315,7 +316,8 @@ iframe {
     p {
         font-size: 0.9em;
         margin-bottom: 12px;
-        line-height: 1.6;
+       /*  line-height: 1.6; */
+        text-align: justify;
     }
     
     small {
@@ -368,7 +370,7 @@ iframe {
 }
 
 /* Extra Small Devices */
-@media (max-width: 320px) {
+@media (max-width: 365px) {
     body {
         padding: 8px;
     }
@@ -380,10 +382,12 @@ iframe {
     h4 {
         font-size: 0.8em;
         padding: 8px;
+        text-align: justify;
     }
     
     p {
         font-size: 0.85em;
+        text-align: justify;
     }
     
     main,
