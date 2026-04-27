@@ -1,5 +1,4 @@
-// Weather app functionality
-const API_KEY = 'silent0829'; 
+const API_KEY = '02c20d28f39d6f1a249c5e3fd4d69cd1'; 
 const API_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
 // DOM elements
@@ -11,7 +10,7 @@ const loading = document.getElementById('loading');
 
 // Weather data elements
 const cityName = document.getElementById('cityName');
-const date = document.getElementById('date');
+const dateText = document.getElementById('date'); // Renamed to avoid conflict with Date object
 const temp = document.getElementById('temp');
 const description = document.getElementById('description');
 const weatherIcon = document.getElementById('weatherIcon');
@@ -39,7 +38,7 @@ function updateDate() {
         month: 'long',
         day: 'numeric'
     };
-    date.textContent = now.toLocaleDateString('en-US', options);
+    dateText.textContent = now.toLocaleDateString('en-US', options);
 }
 
 async function handleSearch() {
@@ -47,12 +46,6 @@ async function handleSearch() {
 
     if (!city) {
         showError('Please enter a city name');
-        return;
-    }
-
-    // Check if API key is set
-    if (API_KEY === 'silent0829') {
-        showDemoData(city);
         return;
     }
 
@@ -67,9 +60,10 @@ async function handleSearch() {
 }
 
 async function fetchWeatherData(city) {
-    const response = await fetch(
-        `${API_URL}?q=${city}&appid=${API_KEY}&units=metric`
-    );
+   const url = `${API_URL}?q=${city}&appid=${API_KEY}&units=metric`;
+
+    
+    const response = await fetch(url);
 
     if (!response.ok) {
         throw new Error('Weather data not found');
@@ -81,18 +75,18 @@ async function fetchWeatherData(city) {
 function displayWeatherData(data) {
     hideAllSections();
 
-    // Update weather information
+    // weather information
     cityName.textContent = `${data.name}, ${data.sys.country}`;
     temp.textContent = Math.round(data.main.temp);
     description.textContent = data.weather[0].description;
 
-    // Update weather details
+    // weather details
     visibility.textContent = `${(data.visibility / 1000).toFixed(1)} km`;
     humidity.textContent = `${data.main.humidity}%`;
     windSpeed.textContent = `${(data.wind.speed * 3.6).toFixed(1)} km/h`;
     feelsLike.textContent = `${Math.round(data.main.feels_like)}°C`;
 
-    // Update weather icon
+    //weather icon
     updateWeatherIcon(data.weather[0].main, data.weather[0].id);
 
     weatherInfo.classList.add('show');
@@ -138,40 +132,6 @@ function updateWeatherIcon(weatherMain, weatherId) {
     weatherIcon.className = iconClass;
 }
 
-function showDemoData(city) {
-    hideAllSections();
-
-    // Demo data for when API key is not set
-    const demoData = {
-        name: city,
-        country: 'Demo',
-        temp: Math.floor(Math.random() * 30) + 5,
-        description: 'partly cloudy',
-        visibility: (Math.random() * 10 + 5).toFixed(1),
-        humidity: Math.floor(Math.random() * 40) + 40,
-        windSpeed: (Math.random() * 20 + 5).toFixed(1),
-        feelsLike: Math.floor(Math.random() * 30) + 5,
-        weatherMain: 'Clouds'
-    };
-
-    cityName.textContent = `${demoData.name}, ${demoData.country}`;
-    temp.textContent = demoData.temp;
-    description.textContent = demoData.description;
-    visibility.textContent = `${demoData.visibility} km`;
-    humidity.textContent = `${demoData.humidity}%`;
-    windSpeed.textContent = `${demoData.windSpeed} km/h`;
-    feelsLike.textContent = `${demoData.feelsLike}°C`;
-
-    updateWeatherIcon(demoData.weatherMain, 801);
-
-    weatherInfo.classList.add('show');
-
-  // Show API key message
-   /*  setTimeout(() => {
-        alert('Demo mode: To get real weather data, sign up for a free API key at openweathermap.org and replace YOUR_API_KEY_HERE in weather.js');
-    }, 1000);  */
-}
-
 function showLoading() {
     hideAllSections();
     loading.classList.add('show');
@@ -189,34 +149,3 @@ function hideAllSections() {
     loading.classList.remove('show');
 }
 
-// Get user's location weather on page load (optional)
-function getUserLocationWeather() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(
-            async (position) => {
-                const { latitude, longitude } = position.coords;
-
-                if (API_KEY !== 'silent0829') {
-                    try {
-                        const response = await fetch(
-                            `${API_URL}?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`
-                        );
-
-                        if (response.ok) {
-                            const data = await response.json();
-                            displayWeatherData(data);
-                        }
-                    } catch (error) {
-                        console.log('Could not get location weather');
-                    }
-                }
-            },
-            (error) => {
-                console.log('Geolocation not available');
-            }
-        );
-    }
-}
-
-// Uncomment the line below to get weather for user's location on page load
-// getUserLocationWeather();
