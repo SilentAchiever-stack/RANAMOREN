@@ -46,3 +46,11 @@ const btn = document.getElementById("menu-icon");
 btn.onclick = () => {
     menu.classList.toggle("active");
 };
+
+
+  window.addEventListener('load', () => {
+    const video = document.querySelector('.front');
+    video.play().catch(error => {
+        console.log("Autoplay was prevented, trying again on interaction.");
+    });
+  });
