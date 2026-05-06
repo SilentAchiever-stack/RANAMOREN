@@ -131,7 +131,7 @@ height: 19%;
 
 /* Hero Section */
 .hero {
-    background-image: url('../asset/main.jpg');
+    background-image: url('main.jpg');
     background-size: cover;
     background-position: center;
     color: white;
