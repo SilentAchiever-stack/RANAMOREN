@@ -47,9 +47,9 @@ btn.onclick = () => {
     menu.classList.toggle("active");
 };
 
-window.addEventListener('load', () => {
-    const video = document.querySelector('.front');
-    video.play().catch(error => {
-        console.log("Autoplay was prevented, trying again on interaction.");
-    });
-  });
+window.addEventListener('load',()=>{
+    const myvideo = document.querySelector('front');
+    myvideo.play().catch( error =>{
+        console.log('video not loading properly')
+    })
+})
